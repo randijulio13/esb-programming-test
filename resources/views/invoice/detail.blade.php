@@ -54,9 +54,9 @@
                                 <tr>
                                     <td width="100px">From</td>
                                     <td>
-                                        <span class="fw-bold">{{ $invoice->customer->name }}</span><br>
-                                        <span>{{ $invoice->customer->address }}</span><br>
-                                        <span>{{ $invoice->customer->state }}</span>
+                                        <span class="fw-bold">Discovery Designs</span><br>
+                                        <span>42 St Vincent Place Glasglow G1 2ER</span><br>
+                                        <span>Scottland</span>
                                     </td>
                                 </tr>
                             </table>

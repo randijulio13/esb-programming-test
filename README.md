@@ -1,12 +1,12 @@
 # PROGRAMMING TEST PT. ESB
 
 ## Information
-This repository contains projects to fulfill test assessments at `PT. Esensi Solusi Buana`.
+This repository contains projects to fulfill programming test assessments at `PT. Esensi Solusi Buana`.
 
 ## Installation
 Clone the repository
 ```
-git clone
+git clone https://github.com/randijulio13/esb-programming-test.git
 ```
 
 Swith to the repo folder
@@ -17,12 +17,6 @@ cd esb-programming-test
 Install all the dependencies using composer
 ```
 composer install
-```
-
-Install and build NPM dependencies
-```
-npm install
-npm run dev
 ```
 
 Copy the example env file and make the required configuration changes in the .env file
@@ -40,9 +34,20 @@ Run the database migrations (Set the database connection in .env before migratin
 php artisan migrate:fresh --seed
 ```
 
+Install NPM dependencies and run vite development server
+```
+npm install && npm run dev
+```
+
 Start the local development server
 ```
 php artisan serve
+```
+
+You can now access the server at http://localhost:8000. Use the following credential to login:
+```
+email: randijulio13@gmail.com
+password: password
 ```
 
 ## API Usage
@@ -67,7 +72,7 @@ Response example:
 }
 ```
 
-You can also hit `{base_url/api/invoice/id}` using `GET` method to get detailed invoice information <br />
+You can also hit `{base_url/api/invoice/:id}` using `GET` method to get detailed invoice information <br />
 Response example:
 ```
 {
