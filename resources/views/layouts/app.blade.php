@@ -78,6 +78,7 @@
             @yield('content')
         </main>
     </div>
+    <script src="{{ asset('js/jquery.js') }}"></script>
     @stack('script')
 </body>
 
