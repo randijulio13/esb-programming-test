@@ -195,6 +195,7 @@
             let data = $(this).serialize()
             let url = $(this).attr('url')
             try {
+                Swal.showLoading()
                 let res = await $.post(url, data)
                 $('#modalInvoice').modal('hide')
                 await Swal.fire({

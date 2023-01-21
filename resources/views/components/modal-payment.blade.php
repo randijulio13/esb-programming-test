@@ -63,6 +63,7 @@
             let url = $(this).attr('action')
             let data = $(this).serialize()
             try {
+                Swal.showLoading()
                 let res = await $.ajax({
                     url,
                     data,
